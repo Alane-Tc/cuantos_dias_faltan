@@ -10,16 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let bnt_valenin_day = document.querySelector("#valentin_day_bnt");
     let bnt_age_person_bnt = document.querySelector("#age_person_bnt");
 
-    let init_result = document.querySelector("#init_result");
-    let new_year_result = document.querySelector("#new_year_result");
-    let chrismas_result = document.querySelector("#christmas_result");
-    let day_of_dead_result = document.querySelector("#day_of_dead_result");
-    let halloween_result = document.querySelector("#halloween_result");
-    let independence_result = document.querySelector("#independence_result");
-    let father_day_result = document.querySelector("#father_day_result");
-    let mother_day_result = document.querySelector("#mother_day_result");
-    let valentin_day_result = document.querySelector("#valentin_day_result");
-    let age_person_result = document.querySelector("#age_person_result");
     let btn_Calculate = document.querySelector("#btn_calculate");
 
     let today = document.querySelector("#today")
