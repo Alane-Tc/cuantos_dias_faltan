@@ -1,0 +1,97 @@
+body {
+  background-color: #f5f3f4;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.marginT {
+  margin-top: 15px;
+}
+
+.marginB {
+  margin-bottom: 15px;
+}
+
+#title-main {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  transition: all 300ms;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+#title-main #title-a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#title-main:hover {
+  animation: shakeY;
+  animation-duration: 2s;
+}
+
+.colums-btn {
+  background-color: #e9c46a;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 3px solid black;
+  margin-left: 4px;
+  cursor: pointer;
+}
+.colums-btn span:hover {
+  text-decoration: underline;
+}
+
+.colums-btn:hover {
+  background-color: #ffd6a5;
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+
+/*RESULTADO*/
+.result-class {
+  background-color: #f8f9fa;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+#new_year_result {
+  display: none;
+}
+
+#christmas_result {
+  display: none;
+}
+
+#day_of_dead_result {
+  display: none;
+}
+
+#halloween_result {
+  display: none;
+}
+
+#independence_result {
+  display: none;
+}
+
+#father_day_result {
+  display: none;
+}
+
+#mother_day_result {
+  display: none;
+}
+
+#valentin_day_result {
+  display: none;
+}
+
+#age_person_result {
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */

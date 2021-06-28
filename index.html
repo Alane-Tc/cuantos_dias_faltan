@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/components/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="src/components/Styles/index.css">
+    <title>¿Cuántos Días Faltan?</title>
+</head>
+
+<body id="fondo">
+    <section class="container">
+        <!---INICIO HEADER-->
+        <header>
+            <div class="marginT"></div>
+            <div class="col-md-12 text-center">
+                <h1 id="title-main">
+                    <a id="title-a" href="index.html">¿Cuántos Días Faltan?...</a>
+                </h1>
+            </div>
+        </header>
+        <!---FIN HEADER-->
+    </section>
+
+    <div class="marginB"></div>
+    <!---INICIO CONTENIDO-->
+    <section class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-md-10 col-sm-12 mb-4">
+                <div class="card border-left-dark shadow h-100 py-2 mb-3">
+                    <div class="card-header text-center text-dark">Selecciona una opción</div>
+                    <div class="card-body">
+                        <!--INICIO BOTONES-->
+                        <div class="container text-center">
+                            <div class="row align-items-start">
+                                <div class="col colums-btn" id="new_year_bnt">
+                                    <span>Año Nuevo</span>
+                                </div>
+
+                                <div class="col colums-btn" id="christmas_bnt">
+                                    <span>Navidad</span>
+                                </div>
+
+                                <div class="col colums-btn" id="day_of_dead_bnt">
+                                    <span>Día de muertos</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row align-items-center">
+                                <div class="col colums-btn" id="halloween_bnt">
+                                    <span>Halloween</span>
+                                </div>
+
+                                <div class="col colums-btn" id="independence_bnt">
+                                    <span>Independencia de México</span>
+                                </div>
+
+                                <div class="col colums-btn" id="father_day_bnt">
+                                    <span>Día del padre</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row align-items-end">
+                                <div class="col colums-btn" id="mother_day_bnt">
+                                    <span>Día de madres</span>
+                                </div>
+
+                                <div class="col colums-btn" id="valentin_day_bnt">
+                                    <span>San Valentín</span>
+                                </div>
+
+                                <div class="col colums-btn" id="age_person_bnt">
+                                    <span>Edad de una persona</span>
+                                </div>
+
+                            </div>
+                            <!--FIN BOTONES-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--INICIO RESULTADO-->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card border-left-dark shadow h-100 py-2 mb-3">
+                    <div class="card-header text-center text-dark">Resultado</div>
+                    <div class="card-body text-center">
+
+                        <!--Inicio Resultado-->
+                        <section id="init_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Titulo Random</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Año nuevo-->
+                        <section id="new_year_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Año nuevo</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Navidad-->
+                        <section id="christmas_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Navidad</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Día de muertos-->
+                        <section id="day_of_dead_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Día de muertos</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Halloween-->
+                        <section id="halloween_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Halloween</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Independencia de México-->
+                        <section id="independence_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Independencia de México</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Día del padre-->
+                        <section id="father_day_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Día del padre</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Día de madre-->
+                        <section id="mother_day_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Día de madres</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--San Valentín-->
+                        <section id="valentin_day_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>San Valentín</h3> <br>
+
+                            </div>
+                        </section> 
+
+                        <!--Edad de Personas-->
+                        <section id="age_person_result" class="result-class">
+                            <div class="col-md-12 card-body">
+                                <h3>Edad de una persona</h3> <br>
+                                <form>
+                                    <div class="marginT"></div>
+                                    <div class="mb-3">
+                                        <label for="input_year" class="form-label">Digite el año de nacimiento</label>
+                                        <input type="number" class="form-control" id="input_year"
+                                            placeholder="Año de nacimiento">
+                                    </div>
+                                    <button type="button" class="btn btn-outline-success">Calcular</button>
+                                </form> <br>
+
+                                <span>Tienes: 0 años</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN RESULTADO-->
+    </section>
+    <!---FIN CONTENIDO-->
+    <script src="src/components/index.js"></script>
+    <script src="src/components/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
