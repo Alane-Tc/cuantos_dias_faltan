@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const fecha2 = new Date()
         let milisegundosdias = 24 * 60 * 60 * 1000
         const diferent_date = Math.abs(fecha2.getTime() - fecha1.getTime())
-        showdate.innerHTML = `<h3>Faltan: ${Math.round(diferent_date / milisegundosdias)} para ${nameday}</h3>`
+        showdate.innerHTML = `<h3 id="holidays_h3">Faltan: ${Math.round(diferent_date / milisegundosdias)} días para ${nameday}</h3>`
     }
 
     const time_init = () => {
@@ -68,6 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     bnt_day_dead.addEventListener("click", function () {
         holidays("#show_date_day_of_dead", "11/01/2021", "Día de muertos")
+    })
+
+    bnt_halloween.addEventListener("click", function () {
+        holidays("#show_date_halloween", "10/31/2021", "Halloween")
+    })
+
+    bnt_independence.addEventListener("click", function () {
+        holidays("#show_date_independence", "09/16/2021", " la Independencia de México")
+    })
+
+    bnt_father_day.addEventListener("click", function () {
+        holidays("#show_date_father_day", "06/20/2022", " el día del padre")
     })
 
     btn_Calculate.addEventListener("click", calculate_Age)

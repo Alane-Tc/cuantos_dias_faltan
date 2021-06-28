@@ -103,14 +103,29 @@ body{
 
 #halloween_result{
     display: none;
+    background: url("../../assets/fondo_div/halloween.jpg");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #independence_result{
     display: none;
+    background: url("../../assets/fondo_div/fiestas-patrias3.jpg");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #father_day_result{
     display: none;
+    background: url("../../assets/fondo_div/fathers-day.jpg");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #mother_day_result{
@@ -124,3 +139,16 @@ body{
 #age_person_result{
     display: none;
 }
+
+#holidays_h3{
+    color: black;
+    text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+}
+
+.title_box{
+    color: white;
+    text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+}
+
+
+
