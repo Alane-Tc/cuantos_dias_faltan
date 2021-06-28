@@ -76,14 +76,29 @@ body{
 
 #new_year_result{
     display: none;
+    background: url("../../assets/fondo_div/añonuevo.jpg");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #christmas_result{
     display: none;
+    background: url("../../assets/fondo_div/navidad.jpg");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #day_of_dead_result{
     display: none;
+    background: url("../../assets/fondo_div/frame-5323753_1920.png");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #halloween_result{
