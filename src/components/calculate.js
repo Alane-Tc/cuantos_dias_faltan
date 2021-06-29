@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let bnt_father_day = document.querySelector("#father_day_bnt");
     let bnt_mother_day = document.querySelector("#mother_day_bnt");
     let bnt_valenin_day = document.querySelector("#valentin_day_bnt");
-    let bnt_age_person_bnt = document.querySelector("#age_person_bnt");
 
     let btn_Calculate = document.querySelector("#btn_calculate");
 
@@ -82,9 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>`
         span();
     }
-
     setInterval(time_init, 1000)
-
 
     bnt_new_year.addEventListener("click", function () {
         holidays("#show_date_year", "12/31/2021", "Año Nuevo")
@@ -110,7 +107,14 @@ document.addEventListener("DOMContentLoaded", function () {
         holidays("#show_date_father_day", "06/20/2022", " el día del padre")
     })
 
-    btn_Calculate.addEventListener("click", calculate_Age)
+    bnt_mother_day.addEventListener("click", function () {
+        holidays("#show_date_mother_day", "10/10/2022", " el día del madres")
+    })
 
+    bnt_valenin_day.addEventListener("click", function () {
+        holidays("#show_date_valentin_day", "02/14/2022", " el San Valentín")
+    })
+
+    btn_Calculate.addEventListener("click", calculate_Age)
 
 })
