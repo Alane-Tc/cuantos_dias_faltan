@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     bnt_valenin_day.addEventListener("click", function () {
-        holidays("#show_date_valentin_day", "02/14/2022", " el San Valentín")
+        holidays("#show_date_valentin_day", "02/14/2022", " San Valentín")
     })
 
     btn_Calculate.addEventListener("click", calculate_Age)
