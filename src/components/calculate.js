@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let age_input = parseInt(document.querySelector("#input_year").value);
         let span_result = document.querySelector("#span_result");
         if (isNaN(age_input)) {
-            span_result.innerHTML = `<h6>Algo salió mal</h6>`
+            swal("Oops!", "Algo salió mal", "error");
         } else if (age_input <= 0) {
-            span_result.innerHTML = `<h6>No puedes digitar años negativos</h6>`
+            swal("Oye!", "No puedes digitar años negativos", "error");
         } else {
             const year = new Date()
             span_result.innerHTML = `<h3>Tienes: ${year.getFullYear() - age_input} años</h3>`
