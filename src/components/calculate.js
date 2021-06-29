@@ -41,12 +41,44 @@ document.addEventListener("DOMContentLoaded", function () {
     const time_init = () => {
         let clock_init = document.querySelector("#clock");
         const clock = new Date()
-        clock_init.innerHTML = `<h3>${clock.getHours()}: ${clock.getMinutes()}: ${clock.getSeconds()}</h3>`
+        hours = clock.getHours()
+        minutes = clock.getMinutes()
+        seconds = clock.getSeconds()
+        let ampm;
+        if (hours >= 12) {
+            hours = hours - 12
+            ampm = 'PM'
+        } else {
+            ampm = 'AM'
+        }
+        if (minutes < 10) {
+            minutes = "0" + minutes
+        }
+        if (seconds < 10) {
+            seconds = "0" + seconds
+        }
+        clock_init.innerHTML = `
+        <div class="row align-items-center">
+            <div class="col">
+                <h1 class="box-clock" id="hours">${hours}:</h1>
+            </div>
+
+            <div class="col">
+                <h1 class="box-clock" id="minutes">${minutes}:</h1>
+            </div>
+
+            <div class="col">
+                <h1 class="box-clock" id="seconds">${seconds}</h1>
+            </div>
+
+            <div class="col">
+                <h1 class="box-clock" id="ampm">${ampm}</h1>
+            </div>
+        </div>`
     }
 
-    let intervalo = setInterval(time_init, 1000)
-
-    console.log(intervalo)
+    setInterval(time_init, 1000)
+    
 
     bnt_new_year.addEventListener("click", function () {
         holidays("#show_date_year", "12/31/2021", "Año Nuevo")
