@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let date = new Date()
     today.innerHTML = `<b>${date.getDate()}/0${date.getMonth()}/${date.getFullYear()}</b>`
 
+    let span = () => { document.querySelector("#load").style.display = "none"; }
+
     const calculate_Age = () => {
         let age_input = parseInt(document.querySelector("#input_year").value);
         let span_result = document.querySelector("#span_result");
@@ -51,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             ampm = 'AM'
         }
+        if (hours < 10) {
+            hours = "0" + hours
+        }
         if (minutes < 10) {
             minutes = "0" + minutes
         }
@@ -75,10 +80,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h1 class="box-clock" id="ampm">${ampm}</h1>
             </div>
         </div>`
+        span();
     }
 
     setInterval(time_init, 1000)
-    
+
 
     bnt_new_year.addEventListener("click", function () {
         holidays("#show_date_year", "12/31/2021", "Año Nuevo")

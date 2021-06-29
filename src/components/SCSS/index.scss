@@ -158,7 +158,7 @@ body{
 .title_box{
     color: white;
     @include textDecorationBlack();
-    overflow: hidden;
+    letter-spacing: 3px;
 }
 
 /*Reloj*/
@@ -169,5 +169,6 @@ body{
     letter-spacing: 4px;
     border-radius: 8px;
     border: 3px solid #adb5bd;
+    overflow: hidden;
 }
 
