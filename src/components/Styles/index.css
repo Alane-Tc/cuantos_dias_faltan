@@ -124,6 +124,17 @@ body {
   display: none;
 }
 
+#init_result {
+  background: url("../../assets/fondo_div/time-3222267_1920.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#init_result .icon-i {
+  text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+}
+
 #holidays_h3 {
   color: black;
   text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
