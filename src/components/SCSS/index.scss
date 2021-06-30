@@ -38,6 +38,11 @@ body{
     @include marginBottom(15px);
 }
 
+#header{
+    @include marginTop(3em);
+    @include marginBottom(3em)
+}
+
 #title-main{
     text-align: center;
     font-size: 40px;
@@ -140,10 +145,20 @@ body{
 
 #mother_day_result{
     display: none;
+    background: url("../../assets/fondo_div/diadelasmothers.jpg");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #valentin_day_result{
     display: none;
+    background: url("../../assets/fondo_div/sanvalentin.jpg");
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #age_person_result{

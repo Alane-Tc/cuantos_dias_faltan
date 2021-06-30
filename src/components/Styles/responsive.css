@@ -1,0 +1,27 @@
+@media (max-width: 575.98px) {
+  /*body{background: red;}*/
+  #header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #title-main {
+    font-size: 25px;
+  }
+
+  .colums-btn {
+    padding: 45px;
+  }
+  .colums-btn img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*body{background: green;}*/
+  #title-main {
+    font-size: 32px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
