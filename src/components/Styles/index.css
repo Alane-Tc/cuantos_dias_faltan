@@ -40,15 +40,15 @@ body {
 
 .colums-btn {
   background-color: #e9c46a;
-  padding: 20px;
   margin-top: 15px;
   border-radius: 8px;
   border: 3px solid black;
   margin-left: 4px;
   cursor: pointer;
 }
-.colums-btn span:hover {
-  text-decoration: underline;
+.colums-btn img {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .colums-btn:hover {

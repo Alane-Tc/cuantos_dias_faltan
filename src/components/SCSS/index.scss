@@ -64,15 +64,15 @@ body{
 
 .colums-btn{
     background-color: #e9c46a;
-    padding: 20px;
     @include marginTop(15px);
     border-radius: 8px;
     border: 3px solid black;
     margin-left: 4px;
     cursor: pointer;
 
-    span:hover{
-        text-decoration: underline;
+    img{
+        @include marginTop(15px);
+        @include marginBottom(10px);
     }
 }
 
