@@ -50,11 +50,86 @@ body {
   margin-top: 15px;
   margin-bottom: 10px;
 }
+.colums-btn h5 {
+  text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+  letter-spacing: 3px;
+}
 
 .colums-btn:hover {
-  background-color: #ffd6a5;
   animation: heartBeat;
   animation-duration: 2s;
+}
+
+#new_year_bnt:hover {
+  background: url("../../assets/fondo_div/añonuevo.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#christmas_bnt:hover {
+  background: url("../../assets/fondo_div/pattern.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#day_of_dead_bnt:hover {
+  background: url("../../assets/fondo_div/day-of-the-dead-paper-4433345_1920.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#halloween_bnt:hover {
+  background: url("../../assets/fondo_div/bats.png");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#independence_bnt:hover {
+  background: url("../../assets/fondo_div/fiestas-patrias3.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#father_day_bnt:hover {
+  background: url("../../assets/fondo_div/fathers-day-card.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#mother_day_bnt:hover {
+  background: url("../../assets/fondo_div/diadelasmothers.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#valentin_day_bnt:hover {
+  background: url("../../assets/fondo_div/love.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#age_person_bnt:hover {
+  background: url("../../assets/fondo_div/business-861325_1920.jpg");
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /*RESULTADO*/

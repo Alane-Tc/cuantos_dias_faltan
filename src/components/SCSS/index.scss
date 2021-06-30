@@ -22,6 +22,14 @@
     text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
 }
 
+@mixin backgroundDiv($url) {
+    background: url($url);
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 body{
     background-color: #f5f3f4;
     background-size: cover;
@@ -74,14 +82,53 @@ body{
         @include marginTop(15px);
         @include marginBottom(10px);
     }
+
+    h5{
+        @include textDecorationWhite();
+        letter-spacing: 3px;
+    }
 }
 
 .colums-btn:hover{
-    background-color: #ffd6a5;
     animation: heartBeat;
     animation-duration: 2s; 
 }
 
+#new_year_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/añonuevo.jpg");
+}
+
+#christmas_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/pattern.jpg");
+}
+
+#day_of_dead_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/day-of-the-dead-paper-4433345_1920.jpg");
+}
+
+#halloween_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/bats.png");
+}
+
+#independence_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/fiestas-patrias3.jpg");
+}
+
+#father_day_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/fathers-day-card.jpg");
+}
+
+#mother_day_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/diadelasmothers.jpg");
+}
+
+#valentin_day_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/love.jpg");
+}
+
+#age_person_bnt:hover{
+    @include backgroundDiv("../../assets/fondo_div/business-861325_1920.jpg");
+}
 /*RESULTADO*/
 
 .result-class{
@@ -91,74 +138,42 @@ body{
 
 #new_year_result{
     display: none;
-    background: url("../../assets/fondo_div/añonuevo.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/añonuevo.jpg");
 }
 
 #christmas_result{
     display: none;
-    background: url("../../assets/fondo_div/navidad.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/navidad.jpg");
 }
 
 #day_of_dead_result{
     display: none;
-    background: url("../../assets/fondo_div/frame-5323753_1920.png");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/frame-5323753_1920.png");
 }
 
 #halloween_result{
     display: none;
-    background: url("../../assets/fondo_div/halloween.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/halloween.jpg");
 }
 
 #independence_result{
     display: none;
-    background: url("../../assets/fondo_div/fiestas-patrias3.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/fiestas-patrias3.jpg");
 }
 
 #father_day_result{
     display: none;
-    background: url("../../assets/fondo_div/fathers-day.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/fathers-day.jpg");
 }
 
 #mother_day_result{
     display: none;
-    background: url("../../assets/fondo_div/diadelasmothers.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/diadelasmothers.jpg");
 }
 
 #valentin_day_result{
     display: none;
-    background: url("../../assets/fondo_div/sanvalentin.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/sanvalentin.jpg");
 }
 
 #age_person_result{
@@ -166,11 +181,7 @@ body{
 }
 
 #init_result{
-    background: url("../../assets/fondo_div/time-3222267_1920.jpg");
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include backgroundDiv("../../assets/fondo_div/time-3222267_1920.jpg");
 
     .icon-i{
         @include textDecorationWhite();
