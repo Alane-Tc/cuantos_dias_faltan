@@ -91,9 +91,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const newDate2 = new Date(date2)
         let milisegundosdias = 24 * 60 * 60 * 1000
         const diferent_date = Math.abs(newDate1.getTime() - newDate2.getTime())
-        test.innerHTML = `<h3 id="holidays_h3">${Math.round(diferent_date / milisegundosdias)} días</h3>`
-
+        if (date1 == date2) {
+            swal("Cuidado!", "Son las mismas fechas", "warning");
+        } else {
+            test.innerHTML = `<h3 id="holidays_h3">${Math.round(diferent_date / milisegundosdias)} días</h3>`
+        }
     }
+
     setInterval(time_init, 1000)
 
     bnt_new_year.addEventListener("click", function () {
