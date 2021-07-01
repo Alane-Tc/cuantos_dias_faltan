@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (date1 == date2) {
             swal("Cuidado!", "Son las mismas fechas", "warning");
         } else {
-            test.innerHTML = `<h3 id="holidays_h3">${Math.round(diferent_date / milisegundosdias)} días</h3>`
+            test.innerHTML = `<input type="text" class="form-control text-center form-control-lg" value="${Math.round(diferent_date / milisegundosdias)} días" disabled readonly>`
         }
     }
 
