@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let bnt_valenin_day = document.querySelector("#valentin_day_bnt");
 
     let btn_Calculate = document.querySelector("#btn_calculate");
+    let btnDate = document.querySelector("#btn-calculate-date")
 
     let today = document.querySelector("#today")
     let date = new Date()
@@ -81,6 +82,18 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>`
         span();
     }
+
+    const calculateDate = () => {
+        let date1 = document.querySelector("#date1").value;
+        let date2 = document.querySelector("#date2").value;
+        let test = document.querySelector("#test")
+        const newDate1 = new Date(date1)
+        const newDate2 = new Date(date2)
+        let milisegundosdias = 24 * 60 * 60 * 1000
+        const diferent_date = Math.abs(newDate1.getTime() - newDate2.getTime())
+        test.innerHTML = `<h3 id="holidays_h3">${Math.round(diferent_date / milisegundosdias)} días</h3>`
+
+    }
     setInterval(time_init, 1000)
 
     bnt_new_year.addEventListener("click", function () {
@@ -117,4 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     btn_Calculate.addEventListener("click", calculate_Age)
 
+    btnDate.addEventListener("click", function () {
+        calculateDate()
+    })
 })
