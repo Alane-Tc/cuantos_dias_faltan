@@ -5,7 +5,7 @@
 
 ------------
 ## 📝Descripción
-Aplicación  [Click Aqui](https://cuantosdiasfaltan.netlify.app/ "Click Aqui")
+Aplicación que calcula fácilmente el tiempo transcurrido entre dos fechas diferentes, y/o te da los días faltantes de las fechas festivas  [Click Aqui](https://cuantosdiasfaltan.netlify.app/ "Click Aqui")
 
 ------------
 
