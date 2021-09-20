@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     bnt_independence.addEventListener("click", function () {
-        holidays("#show_date_independence", "09/16/2021", " la Independencia de México")
+        holidays("#show_date_independence", "09/16/2022", " la Independencia de México")
     })
 
     bnt_father_day.addEventListener("click", function () {
