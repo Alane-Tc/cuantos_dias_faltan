@@ -12,19 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let btn_Calculate = document.querySelector("#btn_calculate");
     let btnDate = document.querySelector("#btn-calculate-date")
 
-    let dateToday = (element) =>{
+    let dateToday = (element) => {
         let today = document.querySelector("#today")
-        today.innerHTML = `<b>${date.getDate()}/${element}${month+1}/${date.getFullYear()}</b>`
+        today.innerHTML = `<b>${date.getDate()}/${element}${month + 1}/${date.getFullYear()}</b>`
     }
-    
+
     let date = new Date()
     month = date.getMonth()
     if (month >= 10) {
         dateToday("")
-    } else{
-        dateToday('0')
+    } else {
+        dateToday("")
     }
-   
+
     let span = () => { document.querySelector("#load").style.display = "none"; }
 
     const calculate_Age = () => {
