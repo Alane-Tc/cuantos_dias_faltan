@@ -114,15 +114,15 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     bnt_christmas.addEventListener("click", function () {
-        holidays("#show_date_chrismas", "12/25/2021", "Navidad")
+        holidays("#show_date_chrismas", "12/25/2022", "Navidad")
     })
 
     bnt_day_dead.addEventListener("click", function () {
-        holidays("#show_date_day_of_dead", "11/01/2021", "Día de muertos")
+        holidays("#show_date_day_of_dead", "11/01/2022", "Día de muertos")
     })
 
     bnt_halloween.addEventListener("click", function () {
-        holidays("#show_date_halloween", "10/31/2021", "Halloween")
+        holidays("#show_date_halloween", "10/31/2022", "Halloween")
     })
 
     bnt_independence.addEventListener("click", function () {
