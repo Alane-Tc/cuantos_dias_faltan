@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(time_init, 1000)
 
     bnt_new_year.addEventListener("click", function () {
-        holidays("#show_date_year", "12/31/2021", "Año Nuevo")
+        holidays("#show_date_year", "12/31/2022", "Año Nuevo")
     })
 
     bnt_christmas.addEventListener("click", function () {
